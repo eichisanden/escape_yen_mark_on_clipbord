@@ -10,6 +10,6 @@ func main() {
 	if err != nil {
 		panic(err)
 	}
-	text = strings.Replace(text, "¥", "¥¥", -1)
+	text = strings.Replace(text, "\\", "\\\\", -1)
 	clipboard.WriteAll(text)
 }
